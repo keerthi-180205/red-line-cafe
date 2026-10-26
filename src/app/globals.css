@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --font-oswald: var(--font-oswald), sans-serif;
+  --font-jakarta: var(--font-plus-jakarta), sans-serif;
+
+  --color-surface: #131313;
+  --color-surface-dim: #131313;
+  --color-surface-bright: #393939;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-surface-variant: #353534;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #e6bdb8;
+  --color-inverse-surface: #e5e2e1;
+  --color-inverse-on-surface: #313030;
+
+  --color-primary: #ffb4ab;
+  --color-on-primary: #690006;
+  --color-primary-container: #d71920;
+  --color-on-primary-container: #ffece9;
+  --color-inverse-primary: #c00014;
+
+  --color-secondary: #f4be4e;
+  --color-on-secondary: #412d00;
+  --color-secondary-container: #b8891a;
+  --color-on-secondary-container: #382700;
+
+  --color-tertiary: #ccc6b7;
+  --color-on-tertiary: #333026;
+  --color-tertiary-container: #716d60;
+  --color-on-tertiary-container: #f7f0e0;
+
+  --color-outline: #ad8884;
+  --color-outline-variant: #5d3f3c;
+
+  --color-background: #131313;
+  --color-on-background: #e5e2e1;
+}
+
+:root {
+  --background: #131313;
+  --foreground: #e5e2e1;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #131313;
+  color: #e5e2e1;
+  font-family: var(--font-plus-jakarta), sans-serif;
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: #d71920;
+  color: #ffffff;
+}
+
+/* Typography Utilities aligned with Stitch DESIGN.md */
+.font-display-hero {
+  font-family: var(--font-oswald), sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+.font-headline-lg {
+  font-family: var(--font-oswald), sans-serif;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: var(--font-oswald), sans-serif;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+.font-headline-sm {
+  font-family: var(--font-oswald), sans-serif;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+.font-body-lg {
+  font-family: var(--font-plus-jakarta), sans-serif;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: var(--font-plus-jakarta), sans-serif;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: var(--font-plus-jakarta), sans-serif;
+  font-weight: 400;
+}
+
+.font-label-lg {
+  font-family: var(--font-plus-jakarta), sans-serif;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.font-label-md {
+  font-family: var(--font-plus-jakarta), sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+.font-label-sm {
+  font-family: var(--font-plus-jakarta), sans-serif;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}

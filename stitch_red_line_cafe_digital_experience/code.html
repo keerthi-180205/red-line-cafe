@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RED LINE CAFE | Basaveshwaranagar, Bengaluru</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#382700",
+            "secondary-fixed": "#ffdea4",
+            "surface-dim": "#131313",
+            "on-tertiary": "#333026",
+            "secondary-container": "#b8891a",
+            "inverse-surface": "#e5e2e1",
+            "on-tertiary-fixed-variant": "#4a473b",
+            "background": "#131313",
+            "surface-variant": "#353534",
+            "surface": "#131313",
+            "surface-bright": "#393939",
+            "error": "#ffb4ab",
+            "primary-fixed": "#ffdad6",
+            "on-surface-variant": "#e6bdb8",
+            "on-error-container": "#ffdad6",
+            "on-tertiary-container": "#f7f0e0",
+            "surface-container-highest": "#353534",
+            "surface-container-low": "#1c1b1b",
+            "on-secondary": "#412d00",
+            "on-secondary-fixed-variant": "#5d4200",
+            "tertiary-container": "#716d60",
+            "surface-container-lowest": "#0e0e0e",
+            "surface-tint": "#ffb4ab",
+            "tertiary-fixed-dim": "#ccc6b7",
+            "on-primary-fixed": "#410002",
+            "on-error": "#690005",
+            "outline-variant": "#5d3f3c",
+            "secondary": "#f4be4e",
+            "on-primary-container": "#ffece9",
+            "inverse-primary": "#c00014",
+            "on-primary": "#690006",
+            "on-secondary-fixed": "#261900",
+            "primary-fixed-dim": "#ffb4ab",
+            "primary": "#ffb4ab",
+            "outline": "#ad8884",
+            "inverse-on-surface": "#313030",
+            "secondary-fixed-dim": "#f4be4e",
+            "tertiary-fixed": "#e9e2d2",
+            "on-primary-fixed-variant": "#93000d",
+            "surface-container": "#201f1f",
+            "on-background": "#e5e2e1",
+            "tertiary": "#ccc6b7",
+            "surface-container-high": "#2a2a2a",
+            "primary-container": "#d71920",
+            "on-tertiary-fixed": "#1e1c12",
+            "error-container": "#93000a",
+            "on-surface": "#e5e2e1"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "gutter-sm": "1rem",
+            "space-md": "1rem",
+            "margin": "2rem",
+            "space-sm": "0.5rem",
+            "margin-sm": "1rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Oswald"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Oswald"],
+            "display-hero": ["Oswald"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Oswald"],
+            "headline-md": ["Oswald"],
+            "headline-lg": ["Oswald"],
+            "body-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "headline-sm": ["20px", {"lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+            "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "display-hero": ["56px", {"lineHeight": "60px", "letterSpacing": "0.02em", "fontWeight": "700"}],
+            "label-lg": ["14px", {"lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600"}],
+            "display-hero-mobile": ["38px", {"lineHeight": "42px", "letterSpacing": "0.02em", "fontWeight": "700"}],
+            "headline-md": ["24px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "headline-lg": ["36px", {"lineHeight": "40px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-white">
+<!-- TOP APP BAR (Shared Component Blueprint Executed) -->
+<header class="bg-surface/85 backdrop-blur-md dark:bg-surface/85 docked full-width top-0 sticky z-50 shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-4 md:px-8 max-w-7xl mx-auto h-20">
+<!-- Brand & Leading Icon -->
+<a class="flex items-center gap-3 group" href="#hero">
+<span class="material-symbols-outlined text-primary-container group-hover:scale-110 transition-transform">restaurant_menu</span>
+<div class="flex items-center gap-1.5">
+<span class="text-headline-md font-headline-md font-bold tracking-wider text-primary-container">RED LINE CAFE</span>
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+</div>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary-container font-bold border-b-2 border-primary-container pb-1 text-label-lg font-label-lg transition-colors" href="#hero">Home</a>
+<a class="text-on-surface hover:text-primary-container transition-colors text-label-lg font-label-lg" href="#menu">Menu</a>
+<a class="text-on-surface hover:text-primary-container transition-colors text-label-lg font-label-lg" href="#categories">Categories</a>
+<a class="text-on-surface hover:text-primary-container transition-colors text-label-lg font-label-lg" href="#about">About</a>
+<a class="text-on-surface hover:text-primary-container transition-colors text-label-lg font-label-lg" href="#visit">Visit Us</a>
+</nav>
+<!-- Trailing Action & Mobile Menu Toggle -->
+<div class="flex items-center gap-3">
+<button class="bg-primary-container hover:bg-inverse-primary text-white font-label-lg text-label-lg py-2.5 px-5 rounded-lg active:scale-95 transition-all shadow-[0_4px_16px_rgba(215,25,32,0.35)] flex items-center gap-2" onclick="toggleModal(true)">
+<span>Order Online</span>
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+</button>
+<!-- Mobile Drawer Toggle -->
+<button aria-label="Toggle Navigation Menu" class="md:hidden p-2 text-on-surface hover:text-primary-container transition-colors focus:outline-none" id="mobileMenuBtn">
+<span class="material-symbols-outlined text-[28px]" id="menuIcon">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Menu -->
+<div class="hidden md:hidden bg-surface-container border-b border-outline-variant/30 px-6 py-5 flex-col gap-4" id="mobileMenu">
+<a class="text-primary-container font-bold text-label-lg font-label-lg py-2 border-b border-outline-variant/20 flex items-center justify-between" href="#hero" onclick="toggleMenu()">
+<span>Home</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="text-on-surface hover:text-primary-container text-label-lg font-label-lg py-2 border-b border-outline-variant/20 flex items-center justify-between" href="#menu" onclick="toggleMenu()">
+<span>Menu</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="text-on-surface hover:text-primary-container text-label-lg font-label-lg py-2 border-b border-outline-variant/20 flex items-center justify-between" href="#categories" onclick="toggleMenu()">
+<span>Categories</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="text-on-surface hover:text-primary-container text-label-lg font-label-lg py-2 border-b border-outline-variant/20 flex items-center justify-between" href="#about" onclick="toggleMenu()">
+<span>About</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="text-on-surface hover:text-primary-container text-label-lg font-label-lg py-2 flex items-center justify-between" href="#visit" onclick="toggleMenu()">
+<span>Visit Us</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- 2. HERO SECTION -->
+<section class="relative overflow-hidden pt-8 pb-16 md:py-24 bg-surface" id="hero">
+<!-- Atmospheric Crimson Ambient Glow -->
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[340px] md:w-[650px] h-[340px] md:h-[650px] bg-primary-container/15 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="absolute bottom-0 right-0 w-72 h-72 bg-secondary/5 blur-[90px] rounded-full pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
+<!-- Left Hero Content -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/40">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest uppercase">Basaveshwaranagar, Bengaluru</span>
+</div>
+<h1 class="text-display-hero-mobile md:text-display-hero font-display-hero uppercase tracking-tight text-white leading-none">
+            GOOD FOOD.<br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container via-primary to-secondary">BIG CRAVINGS.</span><br/>
+            RED LINE.
+          </h1>
+<p class="text-body-lg font-body-lg text-tertiary max-w-xl">
+            Your spot for burgers, loaded fries, Maggi, and more in Basaveshwaranagar, Bengaluru. Freshly grilled, deeply satisfying, made for real food lovers.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 w-full sm:w-auto pt-2">
+<button class="flex-1 sm:flex-initial bg-primary-container hover:bg-inverse-primary text-white text-label-lg font-label-lg px-8 py-3.5 rounded-lg active:scale-95 transition-all shadow-[0_4px_24px_rgba(215,25,32,0.4)] flex items-center justify-center gap-2" onclick="toggleModal(true)">
+<span>ORDER ONLINE</span>
+<span class="material-symbols-outlined text-[18px]">delivery_dining</span>
+</button>
+<a class="flex-1 sm:flex-initial bg-surface-container hover:bg-surface-container-high border border-surface-variant text-on-surface text-label-lg font-label-lg px-8 py-3.5 rounded-lg active:scale-95 transition-all text-center" href="#menu">
+              EXPLORE MENU
+            </a>
+</div>
+<!-- Quick Metrics Bar -->
+<div class="grid grid-cols-3 gap-6 pt-6 border-t border-outline-variant/30 w-full max-w-lg">
+<div>
+<div class="text-headline-md font-headline-md text-white">4.8★</div>
+<div class="text-label-sm font-label-sm text-tertiary">Customer Love</div>
+</div>
+<div>
+<div class="text-headline-md font-headline-md text-white">100%</div>
+<div class="text-label-sm font-label-sm text-tertiary">Fresh Cut Meat</div>
+</div>
+<div>
+<div class="text-headline-md font-headline-md text-secondary">₹60+</div>
+<div class="text-label-sm font-label-sm text-tertiary">Pocket Friendly</div>
+</div>
+</div>
+</div>
+<!-- Right Hero Visual Hero Photo -->
+<div class="lg:col-span-5 relative mt-4 lg:mt-0">
+<div class="relative mx-auto max-w-md lg:max-w-none group">
+<!-- Decorative Border Frame -->
+<div class="absolute -inset-2 bg-gradient-to-r from-primary-container to-secondary rounded-xl opacity-30 blur-lg group-hover:opacity-60 transition duration-500"></div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container border border-surface-variant shadow-2xl">
+<img alt="Red Line Signature Chicken Burger" class="w-full h-80 sm:h-96 md:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A mouthwatering gourmet crispy chicken burger stacked high with melting golden cheddar cheese, vibrant fresh green lettuce, sliced ripe tomatoes, and spicy house red sauce on a toasted brioche bun. Professional high-contrast cafe food photography illuminated with warm dramatic rim lighting against a moody dark aesthetic with subtle fiery red accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHlFBCq9LNJXrCuTuI8tL-buxae1sscBXmWPdBGdOSwY56bMc38qzmHrJrcELPtRBWhovFoMEQpSVAe_5kqG5TfoZaKd1cubt2XNN1aG8Ym8qu6zTEBII7AsSReODA90NQiRuTSB0YT4DBEW4F4xnDUPgmUNgfBpiB659kUHqkMpW4oaPxlwO8IPdyG9eJgX65tNH8lkl9fnfNG92fnNHmqxcUnZyyfmIeP1JrEtL-eRg_fqGFiFUH"/>
+<!-- Floating Badge -->
+<div class="absolute bottom-4 left-4 right-4 p-3 bg-surface-container-lowest/90 backdrop-blur-md rounded-lg border border-outline-variant/40 flex items-center justify-between">
+<div>
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-wider block">Cafe Signature</span>
+<span class="text-headline-sm font-headline-sm text-white">Loaded Crunch Chicken Burger</span>
+</div>
+<span class="text-headline-md font-headline-md text-primary-container">₹149</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. FEATURED MENU SECTION ("Warm Cream" Contrast Background) -->
+<section class="py-16 md:py-24 bg-[#FFF8E8] text-[#171717] transition-colors" id="menu">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="inline-block px-3 py-1 rounded bg-[#171717] text-[#FFF8E8] text-label-sm font-label-sm uppercase tracking-widest mb-3">Fresh &amp; Craveable</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg uppercase text-[#171717] tracking-tight">
+          MADE FOR YOUR CRAVINGS
+        </h2>
+<p class="text-body-md font-body-md text-[#505050] mt-2">
+          Find something delicious for your next visit. Cooked on-order with secret spices and unmistakable crunch.
+        </p>
+</div>
+<!-- 6-Card Ergonomic Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+<!-- Card 1: Chicken Nuggets -->
+<div class="bg-white rounded-xl overflow-hidden border border-[#E5DFCE] hover:border-primary-container shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-48 overflow-hidden bg-[#242424]">
+<img alt="Chicken Nuggets" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Golden crispy bite-sized chicken nuggets fried to perfection arranged on dark parchment with artisanal spicy garlic dipping sauce. Macro shot with crisp crumb texture, warm ambient lighting highlighting the golden brown batter, and fresh parsley garnish in urban gourmet cafe presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiDRkHGmn5M4nLSfX-KXE296u20K49-wQFeX6QPTkHnnfIUqOXk0l-O8l4Vd8LhyT3D5QuAg5yIL3NcBa9MEhrqBQfh1J3RML57f3srs8i2vVSFJThkWrwBvItcn_4l-9NP0_bH5mQcckSyMnVbincUlucvBCSrcyUSyYcUHfi7OBKnR80EFfyl-1XsRkF8zUbad4Omxid5vHYeTLDWPkjH5zsGeNWOdiN5bNj5bMok0TLing2SX5u"/>
+<span class="absolute top-3 right-3 bg-primary-container text-white text-label-sm font-label-sm px-2.5 py-1 rounded">HOT SELLER</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="text-headline-sm font-headline-sm text-[#171717]">Chicken Nuggets</h3>
+<span class="text-headline-md font-headline-md text-primary-container font-bold">₹120</span>
+</div>
+<p class="text-body-sm font-body-sm text-[#505050]">Golden crunchy bite-sized delights fried to tender perfection, served with house special dip.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#F0EAE0] flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-[#737373]">6 Pcs • Non-Veg</span>
+<button class="p-2 rounded bg-[#171717] hover:bg-primary-container text-white transition-colors" onclick="toggleModal(true)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: French Fries -->
+<div class="bg-white rounded-xl overflow-hidden border border-[#E5DFCE] hover:border-primary-container shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-48 overflow-hidden bg-[#242424]">
+<img alt="French Fries" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Golden crisp deep-fried classic French fries showered in fine sea salt and house seasoning mix inside a rustic wire fry cone. Vibrant high-key foodie aesthetic with golden yellow hues and a punchy dark table setting with creamy mayo and crimson tomato dip." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWXJA9v2E8Kso6veTDhZaFU_stZATPG5gBjfDGjT3nEvVqNiLrXI6bdaMBrsZqGcz84gEGkIvdip1N6VNdiBzQYynZXQmdqt5RlYhWKqxgE5FqjmfuWKwUoQVHVpyhV7irdAnNikNDYnK7bMm6xZD7XQGgxSeahSqEKAd6us6lsKJ0VMLz4CVesbyIxjm7sz-3aa3UKFWIDY1IBsMDdihQ7ySOhLvtS6Gyl4CSyOaazPDwrgJgVycW"/>
+<span class="absolute top-3 right-3 bg-[#171717] text-[#FFF8E8] text-label-sm font-label-sm px-2.5 py-1 rounded">CLASSIC</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="text-headline-sm font-headline-sm text-[#171717]">French Fries</h3>
+<span class="text-headline-md font-headline-md text-primary-container font-bold">₹90</span>
+</div>
+<p class="text-body-sm font-body-sm text-[#505050]">Crispy salted golden classic fries tossed in light seasoned herb salt, always sizzling hot.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#F0EAE0] flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-[#737373]">Regular • Veg</span>
+<button class="p-2 rounded bg-[#171717] hover:bg-primary-container text-white transition-colors" onclick="toggleModal(true)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Potato Wedges -->
+<div class="bg-white rounded-xl overflow-hidden border border-[#E5DFCE] hover:border-primary-container shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-48 overflow-hidden bg-[#242424]">
+<img alt="Potato Wedges" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rustic thick-cut potato wedges dusted with smoked paprika, rosemary, and cracked black pepper piled high in a shallow black ceramic bowl. Warm golden skin, fluffy potato interior, professional culinary light, deep contrast cafe atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtR9m_Mv5Py4Bn6OKTvi4nf2aOiXRIHoUNN7FTBEHC96jtTZD36AeNpX6oZaP7xGc_DW0Ap1vnXGxve6CgoX_0jgLBc6wz7I8_S-gzkeL2czAP3nyFdHXfZuIIwOh-urWowhKwG8fEY7dfYErAvdLt3OLczgg9Wi7j60EHkJVDaJZMXO3WzsmYJ1xjXnnPFgO-mHCoxEbP6Luw-ovuAVBlG8tkDtfsgV3w5ggsPrzay_12tX7yfQBq"/>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="text-headline-sm font-headline-sm text-[#171717]">Potato Wedges</h3>
+<span class="text-headline-md font-headline-md text-primary-container font-bold">₹110</span>
+</div>
+<p class="text-body-sm font-body-sm text-[#505050]">Seasoned herb potato wedges with a crisp exterior and soft fluffy center.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#F0EAE0] flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-[#737373]">Herbed • Veg</span>
+<button class="p-2 rounded bg-[#171717] hover:bg-primary-container text-white transition-colors" onclick="toggleModal(true)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Plain Maggi -->
+<div class="bg-white rounded-xl overflow-hidden border border-[#E5DFCE] hover:border-primary-container shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-48 overflow-hidden bg-[#242424]">
+<img alt="Plain Maggi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Steaming hot Indian street-style Maggi noodles in a signature matte black bowl, garnished with chopped fresh coriander and toasted chili flakes. Dramatic steam rising in warm cozy lighting, showcasing glossy yellow noodles and savory rich broth, vibrant cafe editorial shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQiYcQ7xNusd6mghUjvkVFb2Eaor7uyqriKM6sSVj-AeiI0gY7AUnts4o4cyHIHliNZ7FXPdsi_vLu6s8ITxHFxXLzODx7aqHDmD8kr4wBIJqLMAkjkiVfeQzjykk8Ax7QNed3oiwyftr-h7PUEsFkVgqtiwxnEh00L8wJU4GpXLYYnwhfdClrOlXZiB1BI8mgPcjxo1zaeQZzdw7XP1tTjkU-U97OzHN1WqBPhas03R90c-4Qq-WF"/>
+<span class="absolute top-3 right-3 bg-secondary-container text-white text-label-sm font-label-sm px-2.5 py-1 rounded">COMFORT FOOD</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="text-headline-sm font-headline-sm text-[#171717]">Plain Maggi</h3>
+<span class="text-headline-md font-headline-md text-primary-container font-bold">₹60</span>
+</div>
+<p class="text-body-sm font-body-sm text-[#505050]">Comforting classic hot street-style Maggi noodles spiced to nostalgic perfection.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#F0EAE0] flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-[#737373]">Hot Bowl • Veg</span>
+<button class="p-2 rounded bg-[#171717] hover:bg-primary-container text-white transition-colors" onclick="toggleModal(true)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5: Chicken Burger -->
+<div class="bg-white rounded-xl overflow-hidden border border-[#E5DFCE] hover:border-primary-container shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-48 overflow-hidden bg-[#242424]">
+<img alt="Chicken Burger" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up gourmet chicken burger with crunchy fried chicken breast, melted yellow cheese dripping down the patty, pickles, and creamy spicy mayo inside a glazed golden brioche bun. Premium street gourmet styling with deep shadows and mouthwatering clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjRR-SN6oh6XlENSFSOGiNRpEqXE-UbYLljpTg3zCjeca7UnoPtZldK8WzvvH6gySFRRAxoFF22cM2fFHki0qh4a9FxWi190SzRy2vUolH7DQeFISaB4uMp-NWxZNteVQRPu07UModFOXFAgpt0Rd6AHejUO4Rwr3BC2cXOdIyio2VGQB9DgwQBmMNS0L0ArE-_tQxowQ82qBQe9tjArQj_EtKUFXvjw65WULm17kOuhrkoWTi8eAd"/>
+<span class="absolute top-3 right-3 bg-primary-container text-white text-label-sm font-label-sm px-2.5 py-1 rounded">CHEF'S PICK</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="text-headline-sm font-headline-sm text-[#171717]">Chicken Burger</h3>
+<span class="text-headline-md font-headline-md text-primary-container font-bold">₹149</span>
+</div>
+<p class="text-body-sm font-body-sm text-[#505050]">Signature juicy chicken patty, melted cheddar, crisp greens on a buttery toasted bun.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#F0EAE0] flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-[#737373]">Brioche • Non-Veg</span>
+<button class="p-2 rounded bg-[#171717] hover:bg-primary-container text-white transition-colors" onclick="toggleModal(true)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6: Oreo Crush -->
+<div class="bg-white rounded-xl overflow-hidden border border-[#E5DFCE] hover:border-primary-container shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative h-48 overflow-hidden bg-[#242424]">
+<img alt="Oreo Crush Shake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Thick and creamy blended chocolate Oreo milkshake in a tall clear cafe glass, drizzled with rich chocolate fudge sauce, topped with whipped cream and crushed crunchy Oreo biscuit crumble. Droplets of condensation on glass, moody gourmet backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClrkqwu09wtjN6bOudBJEwXNSuJQ8yMeGCxuPsU3k2LDpeSlzrO_gnt-AplXGD6gUMGTawZPw1Xlib7Vkkn68J2Pr7fh6QFzLG3566d8OaZcqIKp9xmZYgAVcidTJhUW2gKjW7VCDi6gammn06RGGcJCIqY4Ko4MV9rzktJ86kHawDS6V6nWQDlntK00YX4Oj_aHmqctKLSao0X6KH5xdK45LRc8jAZuwkqnuJI699nF4o5vvA5U51"/>
+<span class="absolute top-3 right-3 bg-[#171717] text-[#FFF8E8] text-label-sm font-label-sm px-2.5 py-1 rounded">CHILLED</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="text-headline-sm font-headline-sm text-[#171717]">Oreo Crush</h3>
+<span class="text-headline-md font-headline-md text-primary-container font-bold">₹110</span>
+</div>
+<p class="text-body-sm font-body-sm text-[#505050]">Thick creamy blended chocolate Oreo shake with velvety swirls and crunchy biscuit crumb.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#F0EAE0] flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-[#737373]">350ml • Beverage</span>
+<button class="p-2 rounded bg-[#171717] hover:bg-primary-container text-white transition-colors" onclick="toggleModal(true)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- View Full Menu CTA -->
+<div class="text-center mt-12">
+<button class="inline-flex items-center gap-2 bg-[#171717] hover:bg-primary-container text-white text-label-lg font-label-lg px-8 py-3.5 rounded-lg active:scale-95 transition-all shadow-md" onclick="toggleModal(true)">
+<span>VIEW FULL MENU</span>
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 4. FOOD CATEGORY SECTION -->
+<section class="py-16 md:py-24 bg-surface-container-low" id="categories">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="text-secondary text-label-sm font-label-sm uppercase tracking-widest block mb-2">Our Specialty Range</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg uppercase text-white tracking-tight">
+            EXPLORE CATEGORIES
+          </h2>
+</div>
+<p class="text-body-md font-body-md text-tertiary mt-2 md:mt-0 max-w-md">
+          Dive straight into what you're craving right now. Everything crafted fresh on order.
+        </p>
+</div>
+<!-- 4 Category Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Category 1: PLATE ITEMS -->
+<a class="group relative rounded-xl overflow-hidden bg-surface-container border border-surface-variant hover:border-primary-container transition-all duration-300 block" href="#menu">
+<div class="h-64 w-full overflow-hidden">
+<img alt="Plate Items" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 brightness-90 group-hover:brightness-100" data-alt="An enticing assortment of plate snack items including golden fried mozzarella sticks, chicken tenders, and herb crinkle fries on a dark slate board with spicy dips. Editorial street food shoot with warm red restaurant lights and deep shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgOFdgr4YJL8tg0TCNbm8V8s6M9Ao29QXpDZ2HaSv7gDNHnGQVGT50l-P6hzYaQ0vLAdkEfgwYPlHYzNxeu_4MRLGZjjeeTOLFyfcT5bS3iHMH9FF73afU3NCTR5EJkY9lM7fKSo_t45YX_6pMC5dW3dTMpBHl1_9F2nwPk0ksZIUFO6V-O9fmwALAEt4A2VruRpsO5bS9ioetjen0mT97yEuOWtt0jCAkWI5gZxJqhOMXeAsn5eKR"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent flex flex-col justify-end p-5">
+<span class="text-secondary text-label-sm font-label-sm tracking-wider">01 / SHARING &amp; BITES</span>
+<h3 class="text-headline-md font-headline-md text-white mt-1 group-hover:text-primary transition-colors">PLATE ITEMS</h3>
+<p class="text-body-sm font-body-sm text-tertiary mt-1">Snacks, nuggets, wedges &amp; loaded quick plates.</p>
+<span class="inline-flex items-center gap-1 text-primary-container text-label-md font-label-md font-bold mt-3 group-hover:translate-x-1 transition-transform">
+              Browse Items <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Category 2: MAGGI SPECIAL -->
+<a class="group relative rounded-xl overflow-hidden bg-surface-container border border-surface-variant hover:border-primary-container transition-all duration-300 block" href="#menu">
+<div class="h-64 w-full overflow-hidden">
+<img alt="Maggi Special" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 brightness-90 group-hover:brightness-100" data-alt="Artisanal hot steaming Maggi special noodles garnished with melted cheese shreds, green chilies, and peri-peri seasoning in a dark cafe bowl with chop sticks. Rich colors, warm steam haze, and authentic midnight cafe snack vibes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArC55vzScz2wCRAf7sruoEDdYdsFjLnKoPNI4dwqurP-g7xkDi6cEyvYAhwsH8UEH7f9tw70Wvm4ZvT-b5sxnSsZGl74Xpdb8w6Qv4QfoMrx6-PcypYzwD80HPUVScbVXlALsXaICMBT-p1-lcbIzNMng6ztngoTjUtwsoRGf152R08YYLj4uQIMts8vy2nR6eGpmOTeSIDKnWY9aAuOmbNHjOH5_VWumUV1Qv9-IiN2YfWtPA59u-"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent flex flex-col justify-end p-5">
+<span class="text-secondary text-label-sm font-label-sm tracking-wider">02 / DESI NOSTALGIA</span>
+<h3 class="text-headline-md font-headline-md text-white mt-1 group-hover:text-primary transition-colors">MAGGI SPECIAL</h3>
+<p class="text-body-sm font-body-sm text-tertiary mt-1">Classic &amp; spicy cafe Maggi noodles bowls.</p>
+<span class="inline-flex items-center gap-1 text-primary-container text-label-md font-label-md font-bold mt-3 group-hover:translate-x-1 transition-transform">
+              Browse Items <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Category 3: BURGERS -->
+<a class="group relative rounded-xl overflow-hidden bg-surface-container border border-surface-variant hover:border-primary-container transition-all duration-300 block" href="#menu">
+<div class="h-64 w-full overflow-hidden">
+<img alt="Burgers" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 brightness-90 group-hover:brightness-100" data-alt="A gourmet tower burger with crunchy deep-fried patty, caramelized onions, melted cheddar cheese, fresh coleslaw, and barbecue glaze inside a shiny toasted bun on an industrial steel platter with red accent light in a modern Bangalore cafe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6UMb18nIvADTYKs4_69wwiECCmzFKScyhzBo2cW3Uwim23M2unK5IzhI6xoqMM16k7GphucmfBzi8ZmUO0DVZoxLDUHNf4YxCioWyTVdRjnBjxXTaU4tfIkJsKyv5P3GxbYB6oNuMo8rgV8awqmHm-32wbeKQ8BBKLln6p3ip7F2kSgtXsJSqMiHZfAffQMsnWSJWHiTxuNlzDhP72-bsrVK3lDWYU2z0aYql69t23oZdlo4V-Yvc"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent flex flex-col justify-end p-5">
+<span class="text-secondary text-label-sm font-label-sm tracking-wider">03 / SIGNATURE BUNS</span>
+<h3 class="text-headline-md font-headline-md text-white mt-1 group-hover:text-primary transition-colors">BURGERS</h3>
+<p class="text-body-sm font-body-sm text-tertiary mt-1">Crispy, juicy &amp; grilled loaded signature burgers.</p>
+<span class="inline-flex items-center gap-1 text-primary-container text-label-md font-label-md font-bold mt-3 group-hover:translate-x-1 transition-transform">
+              Browse Items <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Category 4: BEVERAGES -->
+<a class="group relative rounded-xl overflow-hidden bg-surface-container border border-surface-variant hover:border-primary-container transition-all duration-300 block" href="#menu">
+<div class="h-64 w-full overflow-hidden">
+<img alt="Beverages" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 brightness-90 group-hover:brightness-100" data-alt="Assorted chilled cafe beverages including a thick cold coffee with foam, vibrant strawberry crush, and chocolate Oreo thickshake in elegant ribbed glasses with paper straws against a textured dark granite cafe table with ice cubes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEBoX6XrJ6J-AGFKDLtSQ1FYgoesMaRXEqTWt-Nxj_NxCy5yu_TND5YDkmNTTLoz2eRJRxYJp2xRbkbXTrCZpFjNvtMgn1f829vfVuT4diFJylZ9bAfluEiKMs_jbPG6BOseEnMUIIOiLwmJTxP_DC-EF8eYwasfhMtmZcqdUPbUfS_I1sexIh4f6liDnZ_2i2VCQwQ5T0Sq1l09pmfZi20EVKRFzajptEa6tucIFjv_WS3gYl_K-h"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent flex flex-col justify-end p-5">
+<span class="text-secondary text-label-sm font-label-sm tracking-wider">04 / CHILL &amp; SHAKES</span>
+<h3 class="text-headline-md font-headline-md text-white mt-1 group-hover:text-primary transition-colors">BEVERAGES</h3>
+<p class="text-body-sm font-body-sm text-tertiary mt-1">Crushes, thick shakes, coolers &amp; cold drinks.</p>
+<span class="inline-flex items-center gap-1 text-primary-container text-label-md font-label-md font-bold mt-3 group-hover:translate-x-1 transition-transform">
+              Browse Items <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. SPECIAL OFFERS SECTION (Bold Promotional Red Banner #D71920) -->
+<section class="py-12 md:py-16 bg-primary-container relative overflow-hidden text-white">
+<!-- Atmospheric Accent Pattern -->
+<div class="absolute -right-12 -top-12 w-64 h-64 border-8 border-white/10 rounded-full pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-80 h-80 border-8 border-black/10 rounded-full pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+<div class="max-w-2xl">
+<span class="inline-flex items-center gap-2 bg-black/25 text-white text-label-sm font-label-sm px-3.5 py-1 rounded-full uppercase tracking-wider mb-3">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span> Limited Period Deals
+          </span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg uppercase font-bold tracking-tight text-white leading-tight">
+            SOMETHING GOOD IS COOKING.
+          </h2>
+<p class="text-body-lg font-body-lg text-white/90 mt-3 max-w-xl">
+            Exclusive cafe combos and seasonal specials dropping soon. Ask our crew during your visit or enjoy instant app discounts!
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+<button class="bg-white hover:bg-[#FFF8E8] text-[#171717] text-label-lg font-label-lg px-8 py-3.5 rounded-lg active:scale-95 transition-all shadow-xl font-bold flex items-center justify-center gap-2" onclick="toggleModal(true)">
+<span>CHECK TODAY'S SPECIALS</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. ABOUT THE CAFE SECTION -->
+<section class="py-16 md:py-24 bg-surface" id="about">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Image Composition Bento -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-xl overflow-hidden border border-surface-variant bg-surface-container shadow-2xl">
+<img alt="Red Line Cafe Ambience" class="w-full h-80 sm:h-96 md:h-[440px] object-cover" data-alt="Interior of a vibrant, contemporary cafe with warm mood lighting, sleek red accent counters, dark charcoal walls, and happy young people chatting at tables with burgers and shakes in Bangalore. Clean industrial design meets cozy community hangout atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-skr2p2jQ5josvec41ukkNrkjTgFhnK-drg6UxPqPePHJ8-AEt-ACY3O4lk24Mr5UDnUXVWZqsfpm_gp27B8D3qwde5ZBO0dnVl0MPpyqaHGj76x3_cjzLFZGaw0Vwk6UwKi5-cIHzJJTEqk8drTeamaq2oy8ypZB_5gv8YkwYgN8Y2IFomBQS_TCzxICIztIHxVcomxYbFAZqJquR8hA7Hdd3lnAYxloayp5gowKitPBZK9Yg-jr"/>
+<div class="absolute bottom-4 left-4 p-4 bg-surface/90 backdrop-blur-md rounded-lg border border-outline-variant/30 max-w-xs">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary-container text-[20px]">storefront</span>
+<span class="text-headline-sm font-headline-sm text-white">Basaveshwaranagar</span>
+</div>
+<p class="text-body-sm font-body-sm text-tertiary">The local hub for real flavors &amp; late evening conversations.</p>
+</div>
+</div>
+</div>
+<!-- Right: Story Content -->
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-block px-3 py-1 rounded bg-surface-container border border-surface-variant text-secondary text-label-sm font-label-sm uppercase tracking-widest">
+            Behind The Red Line
+          </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg uppercase text-white tracking-tight leading-tight">
+            MORE THAN JUST A QUICK BITE
+          </h2>
+<p class="text-body-lg font-body-lg text-tertiary leading-relaxed">
+            A welcoming spot for good food, satisfying snacks, and memorable moments right in the heart of Basaveshwaranagar. Whether it's a late-evening Maggi craving, a loaded burger with friends, or a refreshing Oreo shake, Red Line Cafe brings energy and flavor to every plate.
+          </p>
+<p class="text-body-md font-body-md text-tertiary">
+            We source wholesome ingredients, cook every patty fresh on order, and craft drinks that hit the sweet spot every single time. Stop by to recharge your day or order in for movie night.
+          </p>
+<!-- Core Values Badges -->
+<div class="grid grid-cols-2 gap-4 pt-2">
+<div class="p-3.5 bg-surface-container rounded-lg border border-surface-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">favorite</span>
+<div>
+<h4 class="text-label-md font-label-md text-white">Crafted With Care</h4>
+<p class="text-body-sm font-body-sm text-tertiary">Fresh everyday</p>
+</div>
+</div>
+<div class="p-3.5 bg-surface-container rounded-lg border border-surface-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">flash_on</span>
+<div>
+<h4 class="text-label-md font-label-md text-white">Fast Service</h4>
+<p class="text-body-sm font-body-sm text-tertiary">Hot &amp; crisp to table</p>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 bg-surface-container hover:bg-surface-container-high border border-surface-variant hover:border-primary-container text-white text-label-lg font-label-lg px-8 py-3.5 rounded-lg active:scale-95 transition-all" href="#visit">
+<span>LEARN MORE &amp; VISIT</span>
+<span class="material-symbols-outlined text-[18px]">place</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. VISIT US / LOCATION SECTION -->
+<section class="py-16 md:py-24 bg-surface-container-lowest border-t border-outline-variant/20" id="visit">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-primary-container text-label-sm font-label-sm uppercase tracking-widest block mb-2">Find Your Table</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg uppercase text-white tracking-tight">
+          YOUR NEXT STOP: RED LINE CAFE
+        </h2>
+<p class="text-body-md font-body-md text-tertiary mt-2">
+          Drop in for hot snacks and chilled beverages in Basaveshwaranagar.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Info Cards -->
+<div class="lg:col-span-5 space-y-4">
+<!-- Address -->
+<div class="p-5 bg-surface-container rounded-xl border border-surface-variant hover:border-primary-container transition-colors flex items-start gap-4">
+<div class="p-2.5 rounded-lg bg-primary-container/20 text-primary-container">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-white">Our Address</h3>
+<p class="text-body-sm font-body-sm text-tertiary mt-1">
+                Shop No., 1st Main Rd, Basaveshwaranagar,<br/>
+                Bengaluru, Karnataka 560079
+              </p>
+<span class="inline-block mt-2 text-label-sm font-label-sm text-secondary">Basaveshwaranagar Landmark</span>
+</div>
+</div>
+<!-- Hours -->
+<div class="p-5 bg-surface-container rounded-xl border border-surface-variant hover:border-secondary transition-colors flex items-start gap-4">
+<div class="p-2.5 rounded-lg bg-secondary/20 text-secondary">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-white">Opening Hours</h3>
+<p class="text-body-sm font-body-sm text-tertiary mt-1">
+                Monday – Sunday: <span class="text-white font-medium">11:00 AM – 11:00 PM</span>
+</p>
+<span class="inline-block mt-2 text-label-sm font-label-sm text-emerald-400 flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span> Open Now for Dine-in &amp; Takeaway
+              </span>
+</div>
+</div>
+<!-- Contact -->
+<div class="p-5 bg-surface-container rounded-xl border border-surface-variant hover:border-primary-container transition-colors flex items-start gap-4">
+<div class="p-2.5 rounded-lg bg-primary-container/20 text-primary-container">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-white">Direct Contact</h3>
+<p class="text-body-sm font-body-sm text-tertiary mt-1">
+                Phone: <span class="text-white font-medium">+91 98XXX XXXXX</span>
+</p>
+<p class="text-body-sm font-body-sm text-tertiary">
+                Available on call during operational cafe hours.
+              </p>
+</div>
+</div>
+<!-- Map CTA -->
+<div class="pt-2">
+<a class="w-full bg-primary-container hover:bg-inverse-primary text-white text-label-lg font-label-lg py-3.5 px-6 rounded-lg active:scale-95 transition-all shadow-[0_4px_20px_rgba(215,25,32,0.3)] flex items-center justify-center gap-2" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span>GET DIRECTIONS ON MAP</span>
+<span class="material-symbols-outlined text-[18px]">directions</span>
+</a>
+</div>
+</div>
+<!-- Styled Map Preview Card -->
+<div class="lg:col-span-7">
+<div class="relative rounded-xl overflow-hidden border border-surface-variant bg-surface-container h-[430px] shadow-2xl group">
+<img alt="Basaveshwaranagar Cafe Map Location" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A stylized sleek dark mode city road navigation map graphic centering around Basaveshwaranagar Bengaluru, featuring a vibrant glowing red cafe location pin with subtle streets and glowing traffic arteries in deep charcoal, red and gold." data-location="Bengaluru" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWD0iUTjGxVLAw-6O3vx1Ln3cikHmzUKrZH4huGe0lkOFJeJ3oJwmbMorg55HIMmac8ZdivVmOKFujvsiHsIEr4h7JF8NFyBsD4L_77L09FjVOoWvm8M3CTacnQhcSZfkjkBIZfgiuiVomKUqhrX_GEgjKkCduAVZmzxnn_eNbM9IFHXRQCY0A6PbCXtu7AYmtPH0bBnIfODW7jdkRSBCusKxVIe4eo22SXLVLW1lYNx84cgK4HT5V"/>
+<!-- Map Overlay Card -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute bottom-5 left-5 right-5 p-4 bg-surface/90 backdrop-blur-md rounded-lg border border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="text-headline-sm font-headline-sm text-white flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></span>
+                  RED LINE CAFE PIN
+                </div>
+<div class="text-body-sm font-body-sm text-tertiary">1st Main Rd, Basaveshwaranagar</div>
+</div>
+<a class="bg-surface-container-high hover:bg-primary-container hover:text-white text-on-surface text-label-md font-label-md px-4 py-2 rounded transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+                Open Maps
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. FINAL CALL TO ACTION SECTION -->
+<section class="py-16 md:py-24 bg-surface relative overflow-hidden text-center border-t border-outline-variant/30">
+<div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-primary-container to-transparent"></div>
+<div class="max-w-4xl mx-auto px-4 md:px-8 relative z-10">
+<span class="inline-block w-12 h-1 bg-primary-container rounded mb-6"></span>
+<h2 class="text-display-hero-mobile md:text-display-hero font-display-hero uppercase tracking-tight text-white mb-4">
+        YOUR NEXT CRAVING STARTS HERE.
+      </h2>
+<p class="text-body-lg font-body-lg text-tertiary max-w-xl mx-auto mb-8">
+        Step into our Basaveshwaranagar cafe or get your favorites delivered hot and crisp in minutes.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="bg-surface-container hover:bg-surface-container-high border border-surface-variant text-white text-label-lg font-label-lg px-8 py-3.5 rounded-lg active:scale-95 transition-all" href="#menu">
+          EXPLORE MENU
+        </a>
+<button class="bg-primary-container hover:bg-inverse-primary text-white text-label-lg font-label-lg px-8 py-3.5 rounded-lg active:scale-95 transition-all shadow-[0_4px_24px_rgba(215,25,32,0.4)] flex items-center gap-2" onclick="toggleModal(true)">
+<span>ORDER ONLINE</span>
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 8. ORDER ONLINE MODAL / DRAWER -->
+<div class="fixed inset-0 z-50 hidden transition-all duration-300" id="orderModal">
+<!-- Backdrop Blur Overlay -->
+<div class="fixed inset-0 bg-black/80 backdrop-blur-sm" onclick="toggleModal(false)"></div>
+<!-- Modal Dialog Box -->
+<div class="fixed inset-x-4 bottom-4 md:inset-auto md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-md bg-surface-container border border-surface-variant rounded-2xl p-6 shadow-2xl z-10">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-primary-container"></div>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary">Instant Delivery</span>
+</div>
+<button class="p-1 text-tertiary hover:text-white rounded-lg transition-colors" onclick="toggleModal(false)">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<h3 class="text-headline-md font-headline-md uppercase text-white">
+        HOW WOULD YOU LIKE TO ORDER?
+      </h3>
+<p class="text-body-sm font-body-sm text-tertiary mt-1 mb-6">
+        Get your favorites delivered hot and fresh to your doorstep from our Basaveshwaranagar kitchen.
+      </p>
+<div class="space-y-4">
+<!-- Swiggy Option -->
+<a class="group p-4 rounded-xl bg-surface-container-high border border-outline-variant/30 hover:border-[#FC8019] transition-all flex items-center justify-between" href="https://www.swiggy.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-[#FC8019]/20 text-[#FC8019] flex items-center justify-center font-bold text-lg">
+              S
+            </div>
+<div>
+<div class="text-headline-sm font-headline-sm text-white group-hover:text-[#FC8019] transition-colors">ORDER ON SWIGGY</div>
+<div class="text-body-sm font-body-sm text-tertiary">Fastest doorstep delivery</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-[#FC8019]/20 text-[#FC8019] text-label-sm font-label-sm font-bold">SWIGGY</span>
+</a>
+<!-- Zomato Option -->
+<a class="group p-4 rounded-xl bg-surface-container-high border border-outline-variant/30 hover:border-[#E23744] transition-all flex items-center justify-between" href="https://www.zomato.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-[#E23744]/20 text-[#E23744] flex items-center justify-center font-bold text-lg">
+              Z
+            </div>
+<div>
+<div class="text-headline-sm font-headline-sm text-white group-hover:text-[#E23744] transition-colors">ORDER ON ZOMATO</div>
+<div class="text-body-sm font-body-sm text-tertiary">Exclusive discounts &amp; combos</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-[#E23744]/20 text-[#E23744] text-label-sm font-label-sm font-bold">ZOMATO</span>
+</a>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 text-center">
+<p class="text-body-sm font-body-sm text-tertiary">
+          Visiting us in person? Walk in anytime between 11 AM - 11 PM!
+        </p>
+</div>
+</div>
+</div>
+<!-- 10. FOOTER (Shared Component Blueprint Executed) -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 docked full-width bottom flat no shadows">
+<div class="w-full px-6 py-12 md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<!-- Brand Logo / Wordmark -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left">
+<div class="flex items-center gap-2">
+<span class="text-headline-md font-headline-md font-bold tracking-wider text-primary-container">RED LINE CAFE</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+          Good Food. Big Cravings. Basaveshwaranagar, Bengaluru.
+        </p>
+</div>
+<!-- Links defined by JSON component -->
+<nav class="flex flex-wrap justify-center gap-6 text-label-md font-label-md">
+<a class="text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="#menu">Menu</a>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="#about">About Us</a>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="#visit">Locations</a>
+<button class="text-on-surface-variant hover:text-primary-container transition-colors duration-200" onclick="toggleModal(true)">Order Online</button>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="#visit">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors duration-200" href="#visit">Terms of Service</a>
+</nav>
+<!-- Copyright Text -->
+<div class="text-body-sm font-body-sm text-on-surface-variant text-center md:text-right">
+<p>© 2024 RED LINE CAFE. All rights reserved.</p>
+<p class="text-label-sm font-label-sm text-tertiary mt-0.5">Basaveshwaranagar, Bengaluru</p>
+</div>
+</div>
+</footer>
+<!-- Vanilla JS for Micro-Interactions -->
+<script>
+    function toggleModal(show) {
+      const modal = document.getElementById('orderModal');
+      if (show) {
+        modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      } else {
+        modal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+    }
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('menuIcon');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        menu.classList.add('flex');
+        icon.textContent = 'close';
+      } else {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+        icon.textContent = 'menu';
+      }
+    }
+
+    document.getElementById('mobileMenuBtn')?.addEventListener('click', toggleMenu);
+
+    // Escape key modal close
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') toggleModal(false);
+    });
+  </script>
+</body></html>
